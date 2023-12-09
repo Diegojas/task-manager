@@ -14,8 +14,8 @@ To get the project up and running on your local development machine, follow thes
 ### Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/Diegojas/task-manager.git
+cd task-manager
 ```
 
 ### Configuration
