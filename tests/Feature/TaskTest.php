@@ -63,7 +63,8 @@ class TaskTest extends TestCase
         $task = Task::factory()->create(['user_id' => $this->user->id]);
 
         $response = $this->putJson("/api/tasks/{$task->id}", [
-            'title' => 'Updated Title'
+            'title' => 'Updated Title',
+            'status' => 'in_progress'
         ]);
 
         $response->assertStatus(200);
