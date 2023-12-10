@@ -71,7 +71,7 @@
   </div>
 </template>
 <script setup>
-import { reactive, ref } from "vue";
+import { reactive, ref, watch } from "vue";
 import { useUserStore } from '../stores/user'
 import { useRouter } from "vue-router";
 import Button from '@/components/atoms/Button.vue';

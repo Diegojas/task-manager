@@ -13,8 +13,8 @@ export const validate = (value, rules) => {
   }
 
   if (rules.isEmail && isValid) {
-    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-    isValid = !emailRegex.test(value);
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    isValid = emailRegex.test(value);
     if (!isValid) error = `This field must be a valid email`;
   }
 

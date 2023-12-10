@@ -71,7 +71,7 @@
 <script setup>
 import { useUserStore } from '../stores/user'
 import { useRouter } from "vue-router";
-import { reactive, ref } from "vue";
+import { reactive, ref, watch } from "vue";
 import InputField from "../components/atoms/InputField.vue";
 import Alert from "../components/Alert.vue";
 import Button from '@/components/atoms/Button.vue';

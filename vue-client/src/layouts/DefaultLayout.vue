@@ -86,14 +86,14 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router';
+import { useRouter } from 'vue-router';
 import { useUserStore } from '../stores/user';
 import { storeToRefs } from 'pinia'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 import Notification from '@/components/Notification.vue'
 
-const route = useRoute();
+const route = useRouter();
 const store = useUserStore();
 const { user } = storeToRefs(useUserStore());
 const navigation = [
