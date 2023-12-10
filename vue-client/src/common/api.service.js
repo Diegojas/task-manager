@@ -1,9 +1,11 @@
 import axios from 'axios';
 import apiToken from './token.service'
 
+const isProduction = import.meta.env.MODE === 'production';
+const baseUrl = isProduction ? '' : import.meta.env.VITE_API_BASE_URL;
 // Create an Axios instance
 const apiClient = axios.create({
-  baseURL: `${import.meta.env.VITE_API_BASE_URL}/api`,
+  baseURL: `${baseUrl}/api`,
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
